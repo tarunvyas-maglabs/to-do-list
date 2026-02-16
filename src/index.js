@@ -80,6 +80,7 @@ function ScreenController() {
         const projectName = document.querySelector("#project-name").value;
         handler.addProject(projectName);
         localStorage.setItem("projects", JSON.stringify(handler.getAllProjects()));
+        projectDialog.close();
         updateSideBar();
     })
 
