@@ -1,0 +1,172 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.sidebar {
+    background-color: #FBF9F8;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sidebar-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.to-do-list-logo {
+    width: 100%;
+}
+
+.add-task {
+    text-align: left;
+    background-color: #FBF9F8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+    color: #D2503D;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn, .close-project-btn{
+    background-color: white;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.add-task:hover{
+    cursor: pointer;
+}
+
+.add-task-symbol {
+    fill: #D2503D;
+    height: 30px;
+}
+.add-task:hover {
+    color: #f05d46;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 1px 6px;
+}
+
+.projects-symbol {
+    height: 30px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+}
+
+.project-btn, .add-project-btn {
+    background-color: #FBF9F8;
+    font-size: 1.25rem;
+    border: none;
+    text-align: left;
+    padding: 10px 6px;
+    font-weight: bold;
+}
+
+.project-btn:hover, .add-project-btn:hover {
+    cursor: pointer;
+    color: darkgrey;
+}
+
+dialog {
+    border-radius: 10px;
+    padding: 20px 40px;
+    border: none;
+}
+
+form {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 15px;
+    grid-template-columns: 1fr 3fr;
+    padding-bottom: 40px;
+}
+
+dialog > h2 {
+    text-align: center;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-div {
+    display: block;
+}
+
+
+.content {
+    padding: 20px 40px;
+}
+
+.card {
+    display: flex;
+    padding: 20px 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    align-items: center;
+    gap: 40px;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+    align-items: start;
+}
+
+#submit-new-project, #submit-new-task {
+    padding: 5px 20px;
+    background-color:#D2503D;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.tasks-div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 20px;
+}
